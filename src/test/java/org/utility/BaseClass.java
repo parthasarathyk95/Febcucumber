@@ -117,5 +117,11 @@ public class BaseClass {
 		}
 		return name;
 		//return name1;
+
 	}	
+	// new function
+	public void new_functn() {
+		System.out.println("new_functn");
+
+	}
 }

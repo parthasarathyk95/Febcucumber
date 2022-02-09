@@ -20,8 +20,9 @@ public class Stepdefinition extends BaseClass{
 		LoginPojoFacebook1 l = new LoginPojoFacebook1();
 		
 		fillTextbox(l.getTxtUser(), readExcel(0, 1));
-		
+		System.out.println("invalid_username");
 		fillTextbox(l.getTxtPass(), readExcel(1, 1));
+		System.out.println("invalid_password");
 	}
 
 	@When("user clicks the login button")
@@ -30,6 +31,7 @@ public class Stepdefinition extends BaseClass{
 		LoginPojoFacebook1 l = new LoginPojoFacebook1();
 		btnclick(l.getLoginbtn());
 		Thread.sleep(2000);
+		System.out.println("user clicks the login button");
 	}
 
 	@Then("user will navigate to invalid credential page")

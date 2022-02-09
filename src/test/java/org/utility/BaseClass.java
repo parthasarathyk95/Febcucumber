@@ -27,6 +27,8 @@ public class BaseClass {
 	public static void chromeBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();	
+		
+		
 	}
 	//launchurl method
 	public static void launchUrl(String url) {
@@ -122,6 +124,11 @@ public class BaseClass {
 	// new function
 	public void new_functn() {
 		System.out.println("new_functn");
+
+	}
+	// new function
+	public void another_new_functn() {
+		System.out.println(" another_new_functn");
 
 	}
 }
